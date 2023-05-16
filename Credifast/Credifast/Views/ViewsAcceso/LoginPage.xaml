@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Credifast.Views.ViewsAcceso.LoginPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout Grid.Row="1" HorizontalOptions="Center">
+                    <Label Text="Bienvenido," TextColor="#B4995D" FontSize="22" WidthRequest="300" FontAttributes="Bold" />
+                </StackLayout>
+                <StackLayout Grid.Row="2" HorizontalOptions="Center">
+                    <Label Text="Incia sesion para continuar" TextColor="Gray" FontSize="13" WidthRequest="300" FontAttributes="Bold" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" HorizontalOptions="Center">
+                    <Label Text="Email" TextColor="#767677" FontSize="15" WidthRequest="300" FontAttributes="Bold" />
+                    <Entry WidthRequest="300" HeightRequest="50" Placeholder="example@gmail.com" FontSize="15"
+                          HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Start" 
+                          MaxLength="20" />
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="300">
+                    <Label Text="Password" TextColor="#767677" FontSize="15" WidthRequest="300" FontAttributes="Bold" />
+                    <Entry WidthRequest="300" HeightRequest="50" Placeholder="***********" FontSize="15"
+                          HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text" IsPassword="True"
+                           HorizontalTextAlignment="Start" MaxLength="20"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" HorizontalOptions="Center" WidthRequest="900" Orientation="Horizontal" >
+                    <Image WidthRequest="25"/>
+                    <Button Text="Olvido Contrasena?" TextColor="#B4995D" WidthRequest="150" HeightRequest="45"
+                           FontSize="11" BackgroundColor="Transparent" FontAttributes="Bold" VerticalOptions="Start"
+                            HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Vertical" Margin="15">
+                    <ActivityIndicator Color="#B4995D"></ActivityIndicator>
+                    <Frame Padding="0,4,0,4" HasShadow="True" >
+                        <Button Text="Iniciar" HeightRequest="35" TextColor="#B4995D" BackgroundColor="White"
+                                FontSize="12" FontAttributes="Bold" />
+
+                    </Frame>
+
+                    <Button Text="Nueva Cuenta?" HeightRequest="35" WidthRequest="300" TextColor="#B4995D" 
+                           BackgroundColor="White" />
+
+                </StackLayout>
+                
+            </Grid>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
