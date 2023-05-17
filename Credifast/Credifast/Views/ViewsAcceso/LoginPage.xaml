@@ -24,7 +24,7 @@
                     <Label Text="        ¡Bienvenido!" TextColor="Blue" FontSize="32" WidthRequest="300" FontAttributes="Bold" Padding="0,65,0,0"/>
                 </StackLayout>
                 <StackLayout Grid.Row="1" HorizontalOptions="Center">
-                    <Label Text="            ¡Incia sesion para continuar!" TextColor="Black" FontSize="16" WidthRequest="300" FontAttributes="Bold" Padding="0,27,0,0"/>
+                    <Label Text="            ¡Inicia sesion para continuar!" TextColor="Black" FontSize="16" WidthRequest="300" FontAttributes="Bold" Padding="0,27,0,0"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" HorizontalOptions="Center" WidthRequest="290" Padding="0,70,0,0">
@@ -47,7 +47,7 @@
 
                 <StackLayout Grid.Row="4" HorizontalOptions="Center" WidthRequest="900" Orientation="Horizontal" >
                     <Image WidthRequest="25"/>
-                    <Button Text="¿Olvido Contraseña?" TextColor="Black" WidthRequest="150" HeightRequest="40"
+                    <Button Text="¿Olvido su Contraseña?" TextColor="Black" WidthRequest="180" HeightRequest="40"
                            FontSize="11" BackgroundColor="Transparent" FontAttributes="Bold" VerticalOptions="Start"
                             HorizontalOptions="Center"/>
                 </StackLayout>
