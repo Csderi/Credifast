@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="Credifast.Views.ViewsAcceso.Registro_Cliente">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Margin" Value="0,10,0,0" />
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Margin" Value="0,5" />
+                <Setter Property="Keyboard" Value="Text" />
+            </Style>
+            <Style TargetType="DatePicker">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Margin" Value="0,5" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="Margin" Value="0,20,0,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" Padding="20">
+                <Label Text="Nombre completo" />
+                <Entry Placeholder="Nombre completo" x:Name="nombreEntry" />
+                <Label Text="Gmail" />
+                <Entry Placeholder="Gmail" x:Name="gmailEntry" />
+                <Label Text="Número de teléfono" />
+                <Entry Placeholder="Número de teléfono" x:Name="telefonoEntry" />
+                <Label Text="Domicilio" />
+                <Entry Placeholder="Domicilio" x:Name="domicilioEntry" />
+                <Label Text="Cantidad prestada" />
+                <Entry Placeholder="Cantidad prestada" Keyboard="Numeric" x:Name="cantidadEntry" />
+                <Label Text="Interés" />
+                <Entry Placeholder="Interés" Keyboard="Numeric" x:Name="interesEntry" />
+                <Label Text="Fecha de inicio" />
+                <DatePicker x:Name="inicioDatePicker" MinimumDate="{x:Static sys:DateTime.Now}" Format="yyyy-MM-dd" />
+                <Label Text="Fecha de finalización" />
+                <DatePicker x:Name="finalDatePicker" MinimumDate="{x:Static sys:DateTime.Now}" Format="yyyy-MM-dd" />
+                <Button Text="Guardar" Clicked="GuardarButton_Clicked" BackgroundColor="#2196F3" TextColor="White" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

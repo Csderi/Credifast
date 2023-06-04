@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Credifast.Views.ViewsAcceso.RegisterPage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGreen">
+        <StackLayout VerticalOptions="Start" HorizontalOptions="CenterAndExpand">
             <Grid RowSpacing="25">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="40"/>
@@ -22,61 +22,61 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <StackLayout Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Margin="0,16,0,12">
-                    <Label Text="    Bienvenido a Credifast" TextColor="Blue" FontSize="24" WidthRequest="300" FontAttributes="Bold"/>
+                <StackLayout Grid.Row="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                    <Label Text="                    Registrate Ahora" TextColor="White" FontSize="18" WidthRequest="300"/>
                 </StackLayout>
 
                 <StackLayout Grid.Row="2" HorizontalOptions="Center">
-                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="25">
-                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="Username" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="100">
+                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="Username" PlaceholderColor="Gray" TextColor="Black" FontSize="15"
                                HorizontalOptions="Center" VerticalOptions="Center"  Keyboard="Text"
-                               HorizontalTextAlignment="Start" MaxLength="20" />
+                               HorizontalTextAlignment="Start" MaxLength="10" x:Name="Username"/>
                     </Frame>
                 </StackLayout>
 
                 <StackLayout Grid.Row="3" HorizontalOptions="Center">
-                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="25">
-                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="Email" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="100">
+                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="Email" PlaceholderColor="Gray" TextColor="Black" FontSize="15"
                                HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Email"
-                               HorizontalTextAlignment="Start" MaxLength="35" />
+                               HorizontalTextAlignment="Start" MaxLength="35" x:Name="email2" />
                     </Frame>
                 </StackLayout>
 
                 <StackLayout Grid.Row="4" HorizontalOptions="Center">
-                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="25">
-                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="Password" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="100">
+                        <Entry WidthRequest="275" HeightRequest="50" Placeholder="Password" PlaceholderColor="Gray" TextColor="Black" FontSize="15"
                                HorizontalOptions="Center" VerticalOptions="Center" IsPassword="True"
-                               HorizontalTextAlignment="Start" MaxLength="20" />
+                               HorizontalTextAlignment="Start" MaxLength="15" x:Name="Contra" />
                     </Frame>
                 </StackLayout>
 
                 <StackLayout Grid.Row="5" HorizontalOptions="Center" Orientation="Horizontal">
-                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="25">
-                        <Entry WidthRequest="134" HeightRequest="50" Placeholder="First Name" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="6,0,6,0"
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="100">
+                        <Entry WidthRequest="134" HeightRequest="50" Placeholder="First Name" PlaceholderColor="Gray" TextColor="Black" FontSize="15"
                                HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text"
-                               HorizontalTextAlignment="Start" MaxLength="20" />
+                               HorizontalTextAlignment="Start" MaxLength="25" x:Name="Primero" />
                     </Frame>
-                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="25">
-                        <Entry WidthRequest="134" HeightRequest="50" Placeholder="Last Name" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="6,0,6,0"
+                    <Frame HasShadow="True" HeightRequest="45" Padding="0,1,0,0" CornerRadius="100">
+                        <Entry WidthRequest="134" HeightRequest="50" Placeholder="Last Name" PlaceholderColor="Gray" TextColor="Black" FontSize="15"
                                HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Text"
-                               HorizontalTextAlignment="Start" MaxLength="20" />
+                               HorizontalTextAlignment="Start" MaxLength="25" x:Name="Segundo" />
                     </Frame>
                 </StackLayout>
 
                 <StackLayout Grid.Row="6" HorizontalOptions="Center" Orientation="Horizontal" VerticalOptions="Center">
                     <Frame HasShadow="True" HeightRequest="45" Padding="0,3,0,0" CornerRadius="100">
-                        <Entry WidthRequest="134" HeightRequest="50" Keyboard="Numeric"  PlaceholderColor="Gray" TextColor="Black" Placeholder="Age" Margin="14,0,14,0"
+                        <Entry WidthRequest="134" HeightRequest="50" Keyboard="Numeric"  PlaceholderColor="Gray" TextColor="Black" Placeholder="Age"
                               FontSize="15" HorizontalOptions="Center" VerticalOptions="Center"
-                               HorizontalTextAlignment="Start" MaxLength="20"/>
+                               HorizontalTextAlignment="Start" MaxLength="2" x:Name="edad"/>
                     </Frame>
                 </StackLayout>
 
-                <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical" Margin="15" Spacing="12">
-                    <Frame Padding="0" HasShadow="True" CornerRadius="10">
-                        <Button Text="Aceptar" HeightRequest="40" TextColor="Black" BackgroundColor="Yellow" FontSize="12" FontAttributes="Bold"/>
+                <StackLayout Grid.Row="7" HorizontalOptions="Center" WidthRequest="275" Orientation="Vertical" Margin="15">
+                    <Frame Padding="0,4,0,4" HasShadow="True">
+                        <Button Text="Aceptar" HeightRequest="35" TextColor="#B4995D" BackgroundColor="White" FontSize="12" FontAttributes="Bold" Clicked="Btn_CrearUsuario"/>
                     </Frame>
-                    <Frame Padding="0" HasShadow="True" CornerRadius="10">
-                        <Button Text="Volver" HeightRequest="40" TextColor="Black" BackgroundColor="yellow" FontSize="12" FontAttributes="Bold" Clicked="Volver_Clicked" />
+                    <Frame Padding="0,4,0,4" HasShadow="True">
+                        <Button Text="Volver" HeightRequest="35" TextColor="#B4995D" BackgroundColor="White" FontSize="12" FontAttributes="Bold" Clicked="Volver_Clicked" />
                     </Frame>
 
                     <ActivityIndicator Color="#B4995D"></ActivityIndicator>

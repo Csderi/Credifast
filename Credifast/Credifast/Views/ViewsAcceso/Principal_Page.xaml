@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Credifast.Views.ViewsAcceso.Principal_Page">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#2196F3" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="CornerRadius" Value="8" />
+            <Setter Property="HeightRequest" Value="48" />
+            <Setter Property="Margin" Value="30,10" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+        <Style TargetType="Label" x:Key="TitleLabel">
+            <Setter Property="Text" Value="Credifast" />
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="VerticalTextAlignment" Value="Center" />
+            <Setter Property="TextColor" Value="#2196F3" />
+            <Setter Property="Margin" Value="0,60,0,20" />
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label Style="{StaticResource TitleLabel}" />
+
+            <Button Text="Registro de clientes" Clicked="Clientes_Clicked" />
+            <Button Text="Modificaciones" Clicked="Modificaciones_Clicked" />
+            <Button Text="Consulta de perfil" Clicked="Perfil_Clicked" />
+            <Button Text="Consulta de ganancias" Clicked="Ganancias_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,22 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Credifast.Views.ViewsAcceso.StartPage">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="LightGreen">
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" BackgroundColor="White">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
-                    <RowDefinition Height="275" />
+                    <RowDefinition Height="250" />
+                    <RowDefinition Height="250" />
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
 
-                <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="0,0,0,60" Padding="0,110,0,0">
-                    <Frame CornerRadius="20" HasShadow="True" Padding="0" >
-                        <Image Source="CREDIFAST.png" HeightRequest="160" WidthRequest="140" Aspect="AspectFill"></Image>
-                    </Frame>
+                <StackLayout HorizontalOptions="Center" Grid.Column="0" Grid.Row="0" Margin="0,0,0,20">
+                    <Image Source="CREDIFAST.png" HeightRequest="150" WidthRequest="100" Margin="0,50
+                           ,0,0"></Image>
                 </StackLayout>
 
                 <StackLayout>
@@ -26,12 +25,12 @@
                     <Label Text="" TextColor="#333333" FontSize="15" FontAttributes="None" HorizontalOptions="Center"/>
                 </StackLayout>
 
-                <StackLayout Grid.Column="0" Grid.Row="1" HorizontalOptions="Center" Spacing="25">
-                    <Frame CornerRadius="20" HasShadow="True" Padding="0">
-                        <Button Text="Registrarse" HeightRequest="60" WidthRequest="185" TextColor="#333333" BackgroundColor="Yellow" FontSize="15" Clicked="RegisterNav_Clicked" />
+                <StackLayout Grid.Column="0" Grid.Row="2" HorizontalOptions="Center" Spacing="10">
+                    <Frame>
+                        <Button Text="Registro" HeightRequest="35" WidthRequest="185" TextColor="#333333" BackgroundColor="White" FontSize="10" Clicked="RegisterNav_Clicked" />
                     </Frame>
-                    <Frame CornerRadius="20" HasShadow="True" Padding="0">
-                        <Button Text="Iniciar sesion" HeightRequest="60" WidthRequest="185" TextColor="#333333" BackgroundColor="Yellow" FontSize="15" Clicked="LoginNav_Clicked"/>
+                    <Frame>
+                        <Button Text="Ya tienes una cuenta?" HeightRequest="35" WidthRequest="185" TextColor="#333333" BackgroundColor="White" FontSize="10" Clicked="LoginNav_Clicked"/>
                     </Frame>
                 </StackLayout>
 
