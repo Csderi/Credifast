@@ -59,9 +59,25 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "OxyPlot.Core": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
+            "OxyPlot.Xamarin.Forms": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "SkiaSharp": {
               "target": "Package",
               "version": "[2.88.3, )"
+            },
+            "SkiaSharp.Views.Forms": {
+              "target": "Package",
+              "version": "[2.88.3, )"
+            },
+            "Syncfusion.Xamarin.SfChart": {
+              "target": "Package",
+              "version": "[21.2.8, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

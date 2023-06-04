@@ -3,10 +3,23 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Credifast.Views.ViewsAcceso.Ganancias">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Padding="20">
+            <Label Text="Ganancias Generales" FontSize="20" HorizontalOptions="Center" Margin="0,10,0,20" />
+
+            <!-- Aquí puedes agregar cualquier otro contenido que desees, como gráficos, resúmenes, etc., para mostrar las ganancias generales -->
+
+            <ListView x:Name="gananciasListView" ItemSelected="GananciasListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Padding="10,5">
+                                <Label Text="{Binding Nombre}" FontSize="16" HorizontalOptions="StartAndExpand" />
+                                <Label Text="{Binding Ganancia}" FontSize="16" HorizontalOptions="End" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

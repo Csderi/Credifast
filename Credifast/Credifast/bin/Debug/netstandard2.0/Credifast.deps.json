@@ -12,7 +12,11 @@
           "Microcharts": "0.9.5.9",
           "Microcharts.Forms": "0.9.5.9",
           "NETStandard.Library": "2.0.3",
+          "OxyPlot.Core": "2.1.2",
+          "OxyPlot.Xamarin.Forms": "2.1.0",
           "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views.Forms": "2.88.3",
+          "Syncfusion.Xamarin.SfChart": "21.2.8",
           "Xamarin.Essentials": "1.7.0",
           "Xamarin.Forms": "5.0.0.2196",
           "sqlite-net-pcl": "1.8.116"
@@ -37,7 +41,7 @@
         "dependencies": {
           "Microcharts": "0.9.5.9",
           "SkiaSharp": "2.88.3",
-          "SkiaSharp.Views.Forms": "2.80.2",
+          "SkiaSharp.Views.Forms": "2.88.3",
           "System.ValueTuple": "4.5.0",
           "Xamarin.Forms": "5.0.0.2196"
         },
@@ -58,6 +62,27 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
+      "OxyPlot.Core/2.1.2": {
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        }
+      },
+      "OxyPlot.Xamarin.Forms/2.1.0": {
+        "dependencies": {
+          "OxyPlot.Core": "2.1.2",
+          "Xamarin.Essentials": "1.7.0",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "runtime": {
+          "lib/netstandard2.0/OxyPlot.Xamarin.Forms.dll": {
+            "assemblyVersion": "2.1.0.0",
+            "fileVersion": "2.1.0.0"
+          }
+        }
+      },
       "SkiaSharp/2.88.3": {
         "dependencies": {
           "SkiaSharp.NativeAssets.Win32": "2.88.3",
@@ -73,7 +98,7 @@
       },
       "SkiaSharp.NativeAssets.macOS/2.88.3": {},
       "SkiaSharp.NativeAssets.Win32/2.88.3": {},
-      "SkiaSharp.Views.Forms/2.80.2": {
+      "SkiaSharp.Views.Forms/2.88.3": {
         "dependencies": {
           "SkiaSharp": "2.88.3",
           "Xamarin.Forms": "5.0.0.2196"
@@ -123,6 +148,38 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {
             "assemblyVersion": "2.0.4.976",
             "fileVersion": "2.0.4.976"
+          }
+        }
+      },
+      "Syncfusion.Licensing/21.2.8": {
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "21.2.8.0",
+            "fileVersion": "21.2.8.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.Core/21.2.8": {
+        "dependencies": {
+          "Syncfusion.Licensing": "21.2.8",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.Core.XForms.dll": {
+            "assemblyVersion": "21.2.8.0",
+            "fileVersion": "21.2.8.0"
+          }
+        }
+      },
+      "Syncfusion.Xamarin.SfChart/21.2.8": {
+        "dependencies": {
+          "Syncfusion.Xamarin.Core": "21.2.8",
+          "Xamarin.Forms": "5.0.0.2196"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Syncfusion.SfChart.XForms.dll": {
+            "assemblyVersion": "21.2.8.0",
+            "fileVersion": "21.2.8.0"
           }
         }
       },
@@ -227,6 +284,20 @@
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
+    "OxyPlot.Core/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/BuPL1Wa7ZhpKA2DBe72md+S8PgIHF+UP/NsKfO9BiheXnbns1/tqS7s2MWIR1xFy5i+PWVC67KziGPY48mNgA==",
+      "path": "oxyplot.core/2.1.2",
+      "hashPath": "oxyplot.core.2.1.2.nupkg.sha512"
+    },
+    "OxyPlot.Xamarin.Forms/2.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dsVqIn5/lU8Mv2yNUBYzUhIj7hTSGkm+uIx5pSc2quxTSdfGKlpZSPpnfdmXLRWC5nPeUAFl8VT5MZbPywRJhQ==",
+      "path": "oxyplot.xamarin.forms/2.1.0",
+      "hashPath": "oxyplot.xamarin.forms.2.1.0.nupkg.sha512"
+    },
     "SkiaSharp/2.88.3": {
       "type": "package",
       "serviceable": true,
@@ -248,12 +319,12 @@
       "path": "skiasharp.nativeassets.win32/2.88.3",
       "hashPath": "skiasharp.nativeassets.win32.2.88.3.nupkg.sha512"
     },
-    "SkiaSharp.Views.Forms/2.80.2": {
+    "SkiaSharp.Views.Forms/2.88.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8aRDb98O2cHymB94O8FBj85qMC+MYEY6591wBpHcwgfz4HMo4orSMApD5y8VDmHpA5KR0Yh2ija+HTylz/9CgA==",
-      "path": "skiasharp.views.forms/2.80.2",
-      "hashPath": "skiasharp.views.forms.2.80.2.nupkg.sha512"
+      "sha512": "sha512-zLCojq2yZhm/ZdUUevT1/e84XPp+Sr/lT51TrQ/KRiw01Q05xzfESDFJ7CTFgl/wG0M4dqyv5IkexZMyUWhulg==",
+      "path": "skiasharp.views.forms/2.88.3",
+      "hashPath": "skiasharp.views.forms.2.88.3.nupkg.sha512"
     },
     "sqlite-net-pcl/1.8.116": {
       "type": "package",
@@ -289,6 +360,27 @@
       "sha512": "sha512-YiqCw+PfiPIuX2aZnEqt1ya5ldGm4ParIqzaRXtztDu8mdzZxOXVYOrKZazXg6nbwYbCP1H5mOYGmBFQ2W0M5g==",
       "path": "sqlitepclraw.provider.e_sqlite3/2.0.4",
       "hashPath": "sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512"
+    },
+    "Syncfusion.Licensing/21.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Q4BagjTP28tKChemRZI602M3hH74nOxWQgdomRSFbm1ole17nKir1KHdhR/m96TIEDAPCa1QQ/U0DLHaX0h11Q==",
+      "path": "syncfusion.licensing/21.2.8",
+      "hashPath": "syncfusion.licensing.21.2.8.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.Core/21.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rf2kDM80wEz0kf8rO1nvXbQL+9IBKcitIhZKSOLmdlLfXyDFyXkvGcLjeFFCJ7cQChx5qpPbjV1YYR8gEbM8fg==",
+      "path": "syncfusion.xamarin.core/21.2.8",
+      "hashPath": "syncfusion.xamarin.core.21.2.8.nupkg.sha512"
+    },
+    "Syncfusion.Xamarin.SfChart/21.2.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iMw2+0IdqUKXe5UfL49lfmoZRX7KU3wpdnS6z0uSzstEs3FeyVevVRpWJwoKBKF5y6g5ziVcw1FMKuql4eR8Yg==",
+      "path": "syncfusion.xamarin.sfchart/21.2.8",
+      "hashPath": "syncfusion.xamarin.sfchart.21.2.8.nupkg.sha512"
     },
     "System.Buffers/4.4.0": {
       "type": "package",
