@@ -95,6 +95,7 @@ namespace Credifast.Views.ViewsAcceso
             domicilioEntry.Text = "";
             cantidadEntry.Text = "";
             interesEntry.Text = "";
+
             inicioDatePicker.Date = DateTime.Now;
             finalDatePicker.Date = DateTime.Now;
         }
