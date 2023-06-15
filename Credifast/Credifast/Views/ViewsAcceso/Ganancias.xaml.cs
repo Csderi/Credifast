@@ -35,7 +35,7 @@ namespace Credifast.Views.ViewsAcceso
             var gananciaItems = usuarios.Select(u => new GananciaItem
             {
                 Nombre = u.Nombre,
-                Ganancia = u.PagoAlMes * GetMeses(u.Inicio, u.Final)
+                Ganancia = u.PagoAlMes 
             }).ToList();
 
             // Actualizar la lista de ganancias en el ListView
