@@ -1,0 +1,42 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Credifast.Views.ViewsAcceso.Perfiles">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="LightGreen" Padding="15,10,15,0">
+            <ListView x:Name="usuariosListView"
+                  HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem 
+                                x:Name="BtnDelete"
+                                Text="Eliminar"
+                                IsDestructive="True"
+                                Clicked="BtnDelete_Clicked"
+                                CommandParameter="{Binding .}"
+                                
+                                />
+                            </ViewCell.ContextActions>
+                            <Frame BackgroundColor="White" Margin="10" CornerRadius="25">
+                                <StackLayout Padding="10" >
+                                    <Label Text="ID" TextColor="Black"/>
+                                    <Label Text="{Binding Id}" FontSize="15" FontAttributes="Italic" TextColor="Black"/>
+                                    <Label Text="{Binding Nombre}" FontSize="18" FontAttributes="Bold" TextColor="Black"/>
+                                    <Label Text="{Binding Gmail}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding NumeroTelefono}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding Domicilio}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding Cantidad_prestada, StringFormat='Cantidad prestada: {0:C}'}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding Interes, StringFormat='Interés: {0:P}'}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding Inicio, StringFormat='Inicio: {0:d}'}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding Final, StringFormat='Final: {0:d}'}" FontSize="16" TextColor="Black"/>
+                                    <Label Text="{Binding PagoAlMes, StringFormat='Mensualidad: {0:C}'}" FontSize="16" TextColor="Black"/>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             x:Class="Credifast.Views.ViewsAcceso.Registro_Cliente">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Margin" Value="0,5" />
+                <Setter Property="Keyboard" Value="Text" />
+            </Style>
+            <Style TargetType="DatePicker">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Margin" Value="0,5" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="Margin" Value="0,20,0,0" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center" Padding="20" BackgroundColor="LightGreen">
+                <Label Text="Registro de prestamo" TextColor="Blue" HorizontalOptions="Center" FontSize="25" Padding="0,15,0,40" FontAttributes="Bold"></Label>
+                <Label Text="Nombre completo" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <Entry  x:Name="nombreEntry" WidthRequest="275" HeightRequest="50" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center" MaxLength="38"/>
+                </Frame>
+
+                <Label Text="Gmail" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <Entry  x:Name="gmailEntry" WidthRequest="275" HeightRequest="50" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center" MaxLength="38"/>
+                </Frame>
+                <Label Text="Número de teléfono" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <Entry  x:Name="telefonoEntry" WidthRequest="275" HeightRequest="50" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center" Keyboard="Numeric" MaxLength="9"/>
+                </Frame>
+                <Label Text="Domicilio" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <Entry  x:Name="domicilioEntry" WidthRequest="275" HeightRequest="50" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center" MaxLength="35"/>
+                </Frame>
+                <Label Text="Cantidad prestada" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <Entry  Keyboard="Numeric" x:Name="cantidadEntry"  WidthRequest="275" HeightRequest="50" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center" MaxLength="12"/>
+                </Frame>
+                <Label Text="Interés" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <Entry  Keyboard="Numeric" x:Name="interesEntry" WidthRequest="275" HeightRequest="50" Placeholder="0.0" PlaceholderColor="Gray" TextColor="Black" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="Fecha de inicio" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <DatePicker x:Name="inicioDatePicker" MinimumDate="{x:Static sys:DateTime.Now}" Format="yyyy-MM-dd" TextColor="Black" WidthRequest="275" HeightRequest="50" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Label Text="Fecha de finalización" TextColor="Black" FontAttributes="Bold" Padding="0,10,0,0"/>
+                <Frame HasShadow="True" HeightRequest="45" Padding="0" CornerRadius="25">
+                    <DatePicker x:Name="finalDatePicker" MinimumDate="{x:Static sys:DateTime.Now}" Format="yyyy-MM-dd" TextColor="Black" WidthRequest="275" HeightRequest="50" FontSize="15" Margin="10,0,10,0"
+                               HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Frame>
+                <Button Text="Guardar" Clicked="GuardarButton_Clicked" WidthRequest="300" HeightRequest="50" TextColor="Black" BackgroundColor="Yellow"
+                                FontSize="12" FontAttributes="Bold" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
